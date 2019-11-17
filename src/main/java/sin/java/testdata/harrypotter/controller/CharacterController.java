@@ -23,8 +23,14 @@ public class CharacterController {
         return characterService.getCharacterById(characterId);
     }
 
+    @DeleteMapping("/character/{characterId}")
+    public String deleteCharacter(@PathVariable Long characterId) {
+        return characterService.deleteCharacterById(characterId);
+    }
+
     @PostMapping("/add")
     public Character addCharacter(@RequestBody Character character){
         return characterService.addHarryPotterCharacter(character);
     }
+
 }
