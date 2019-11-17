@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Character {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private Long id;
     @Column(name = "FIRSTNAME")
