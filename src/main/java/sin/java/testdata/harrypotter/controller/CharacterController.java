@@ -18,6 +18,11 @@ public class CharacterController {
         return characterService.getAllCharacters();
     }
 
+    @GetMapping("/character/{characterId}")
+    public Character getCharacter(@PathVariable Long characterId) {
+        return characterService.getCharacterById(characterId);
+    }
+
     @PostMapping("/add")
     public Character addCharacter(@RequestBody Character character){
         return characterService.addHarryPotterCharacter(character);
