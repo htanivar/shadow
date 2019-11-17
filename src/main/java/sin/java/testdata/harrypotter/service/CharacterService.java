@@ -17,4 +17,8 @@ public class CharacterService {
     public List<Character> getAllCharacters() {
         return characterRepository.findAll();
     }
+
+    public Character addHarryPotterCharacter(Character character){
+        return characterRepository.save(character);
+    }
 }
