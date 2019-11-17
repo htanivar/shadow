@@ -21,4 +21,8 @@ public class CharacterService {
     public Character addHarryPotterCharacter(Character character){
         return characterRepository.save(character);
     }
+
+    public Character getCharacterById(Long id) {
+        return characterRepository.findById(id).orElseThrow(()->new IllegalArgumentException("Unable to find Character Id "+id));
+    }
 }
