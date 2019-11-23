@@ -8,6 +8,7 @@ import sin.java.testdata.harrypotter.service.CharacterService;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class CharacterController {
 
     @Autowired
