@@ -8,7 +8,6 @@
 
 ### Get All Characters
 GET http://localhost:1717/api/all
-#GET http://dummydev.ddns.net:1717/all
 Accept: application/json
 
 #### Get Specific Characters
