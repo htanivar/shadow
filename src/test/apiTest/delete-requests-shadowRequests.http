@@ -1,0 +1,8 @@
+###
+
+# curl -X DELETE "http://localhost:1717/api/character/4" -H "accept: */*"
+DELETE http://localhost:1717/api/character/3
+accept: */*
+
+###
+
