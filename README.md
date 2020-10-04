@@ -1,6 +1,6 @@
 # Important files
 1. application.properties [Spring configuration file]
-1. data.sql [seed data for Spring boot application]
+1. Data load is happening via Liquibase [resources/db/changelog] 
 
 # How to Start the application
 1. Checkout the project
