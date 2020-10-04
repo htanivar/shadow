@@ -8,23 +8,23 @@ import sin.java.testdata.harrypotter.service.CharacterService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1/character")
 public class CharacterController {
 
     @Autowired
     private CharacterService characterService;
 
-    @GetMapping("/all")
+    @GetMapping("/get/all")
     public List<Character> getAllCharacters() {
         return characterService.getAllCharacters();
     }
 
-    @GetMapping("/character/{characterId}")
+    @GetMapping("/get/{characterId}")
     public Character getCharacter(@PathVariable Long characterId) {
         return characterService.getCharacterById(characterId);
     }
 
-    @DeleteMapping("/character/{characterId}")
+    @DeleteMapping("/delete/{characterId}")
     public String deleteCharacter(@PathVariable Long characterId) {
         return characterService.deleteCharacterById(characterId);
     }
