@@ -1,0 +1,6 @@
+### Get All Characters
+
+GET {{hostname}}:{{port}}/api/all
+Accept: application/json
+
+###
