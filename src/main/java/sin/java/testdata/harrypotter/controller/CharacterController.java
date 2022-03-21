@@ -14,7 +14,7 @@ public class CharacterController {
     @Autowired
     private CharacterService characterService;
 
-    @GetMapping("/all")
+    @GetMapping("/character/all")
     public List<Character> getAllCharacters() {
         return characterService.getAllCharacters();
     }
@@ -29,7 +29,7 @@ public class CharacterController {
         return characterService.deleteCharacterById(characterId);
     }
 
-    @PostMapping("/add")
+    @PostMapping("/character/add")
     public Character addCharacter(@RequestBody Character character){
         return characterService.addHarryPotterCharacter(character);
     }
