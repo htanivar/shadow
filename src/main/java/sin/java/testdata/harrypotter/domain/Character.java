@@ -20,6 +20,11 @@ public class Character {
     private String middleName;
     @Column(name = "LASTNAME")
     private String lastName;
+    @Column(name = "CONSTITUTE_TYPE")
+    private CharacterConstitute constituteType;
+    @Column(name = "CONSTITUTE")
+    private CharacterConstitute constitute;
+
 
 //    private ArrayList<NickNames> nickNamesList = new ArrayList<>();
 
