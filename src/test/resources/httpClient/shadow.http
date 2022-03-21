@@ -1,6 +1,21 @@
 ### Get All Characters
 
-GET {{hostname}}:{{port}}/api/all
+GET {{hostname}}:{{port}}/api/character/all
 Accept: application/json
 
-###
+
+### Create a new Character
+POST {{hostname}}:{{port}}/api/character/add
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "middleName": "-",
+  "lastName": "last"
+}
+
+### Get Specific Characters by ID
+
+GET {{hostname}}:{{port}}/api/character/1
+Accept: application/json
